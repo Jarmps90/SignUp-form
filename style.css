@@ -1,3 +1,15 @@
+:root{
+    --border-color-1:rgb(230, 230, 230);
+    --border-form: solid 1px;
+    --button-color: #596D48;
+    --box-shadow: 3px 4px 5px rgb(175, 175, 175);
+    --bg-color-main: rgb(247, 241, 241);
+    --bg-color-second: white;
+    --ff-main: sans-serif;
+    --fs-main: .857rem;
+    --fc-main: black;
+    --fc-second:rgb(192, 197, 192);
+}
 @font-face {
     font-family:'Norse';
     src: url(resorces/fonts/fontie-package/Norse-Bold.eot);
@@ -10,11 +22,13 @@
     font-stretch: normal;
     unicode-range: U+0020-00FE;
 }
+
+
 body{
     display:flex;
     align-items: center;
     margin: 0;
-    background-color: rgb(241, 236, 236);
+    background-color: var(--bg-color-main);
     font-family: sans-serif;
     font-weight: bold;
     
@@ -30,7 +44,7 @@ input{
 .colum{
     display: flex;
     flex-direction: column;
-    font-size: 0.9rem;
+    font-size: var(--fs-main);
     
 }
 
@@ -41,29 +55,25 @@ input{
     align-content: center;
 }
 
-.left{
-    width: 80vh;
-}
+
 .right{
     
     width: 100%;
 }
 
 .form{
-    --border-color-1:rgb(185, 176, 176);
-    --border-form: solid 1px;
-    background-color: white;
+   
+    background-color: var(--bg-color-second);
     padding-top: 10px;
     padding-left: 50px;
     border-top: var(--border-form), var(--border-color-1);
     border-bottom: var(--border-form), var(--border-color-1);
-    box-shadow: 0 1px 5px rgb(236, 232, 232), 2px 5px 10px rgb(202, 197, 197);
+    box-shadow: 1px 7px 8px rgba(201, 200, 200, 0.5);
     
 }
 
 button{
-    --button-color: #596D48;
-    --box-shadow: 3px 4px 5px gray;
+   
     font-size: 1rem;
     font-weight: bold;
     color: white;
@@ -77,18 +87,26 @@ button{
     box-shadow: var(--box-shadow);
     cursor: pointer;
 }
-p{
+.signIn-link{
     margin-top: 40px;
     margin-left: 50px;
 }
 
-a:visited,
-:link{
-    text-decoration: none;
-    color: #596D48;
-    background-color: var(--button-color);
-
+.img-link{
+    position: fixed;
+    bottom: 5vh;
+    color: var(--fc-second);
 }
+/* Hyperlink styling */
+a[href^='#']{
+    text-decoration: none;
+    color: var(--button-color);
+}
+
+a[href^='http']{
+    color:var(--fc-second)
+}
+
 
 
 
