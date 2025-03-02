@@ -61,6 +61,10 @@ input{
     width: 100%;
 }
 
+.left{
+    position: relative;
+}
+
 .form{
    
     background-color: var(--bg-color-second);
@@ -93,9 +97,11 @@ button{
 }
 
 .img-link{
-    position: fixed;
-    bottom: 5vh;
+    position: absolute;
+    bottom: 0;
+    left: 20vh;
     color: var(--fc-second);
+    font-family: 'Courier New', Courier, monospace;
 }
 /* Hyperlink styling */
 a[href^='#']{
