@@ -4,14 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Tenor+Sans&display=swap" rel="stylesheet">
     <title>Top Sign-Up</title>
 </head>
 <body>
     <div class="left side">
+        <div class="odin">
+            <img src="./resorces/images/odin-lined.png" alt="Odin logo" width="100" height="auto">
+            <P>Odin</P>
+        </div>
+        
         <img src="./resorces/images/sergio-zhukov-GZyXnyOeC-o-unsplash.jpg" alt="A view of a mountain range covered in fog"
-        style="object-fit: fill;
-                width: 80vh;
+        style="object-fit: contain;
+                width: 40vw;
                 height: auto;"/>
+        
         <p class="img-link">
         Photo by <a href="https://unsplash.com/@opohmelka?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Sergio Zhukov</a> on <a href="https://unsplash.com/photos/a-view-of-a-mountain-range-covered-in-fog-GZyXnyOeC-o?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
         </p> 
@@ -24,25 +33,35 @@
             <div id="sign-up">
                 <div class="colum first">
                     <label for="first-name">FIRST NAME</label>
-                    <input type="text" id="first-name" name="name" required>
+                    <input type="text" id="first-name" name="first-name" required>
 
                     <label for="email">EMAIL</label>
                     <input type="email" id="email" name="mail" required>
 
                     <label for="new_pwd">PASSWORD</label>
-                    <input type="password" id="new_pwd" name="pwd1">
+                    <input type="password" 
+                    id="new_pwd" 
+                    name="pwd1"
+                    required
+                    minlength="6"
+                            />
                 </div>
                 
                 <div class="colum second">
-                    <label for="user_last-name">LAST NAME</label>
-                    <input type="text" id="user_last-name" name="last-name" required>
+                    <label for="last-name">LAST NAME</label>
+                    <input type="text" id="last-name" name="last-name" required>
                 
 
                     <label for="phone_nr">PHONE NUMBER</label>
                     <input type="tel" id="phone_nr" name="phone" required>
                 
                     <label for="confirm_pwd">CONFIRM PASSWORD</label>
-                    <input type="password" id="confirm_pwd" name="pwd2">
+                    <input type="password" 
+                    id="confirm_pwd" 
+                    name="pwd2"
+                    required
+                    minlength="6"
+                    />
                 </div>
             </div>
         </div>
