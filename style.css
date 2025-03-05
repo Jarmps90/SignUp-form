@@ -192,7 +192,3 @@ input[type=email]:invalid:focus{
 input[type=email]:valid:focus{
     outline-color:var(--border-clr-valid);
 }
-
-input[type=email]{
-    background-color: white;
-}
